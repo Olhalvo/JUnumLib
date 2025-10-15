@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"me.olhalvo.unum","l":"Main"},{"p":"me.olhalvo.unum.types","l":"OutOfUnsignedRangeException"},{"p":"me.olhalvo.unum.types","l":"UByte"},{"p":"me.olhalvo.unum.types","l":"UNumber"}];updateSearchResults();

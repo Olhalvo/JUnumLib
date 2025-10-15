@@ -1,28 +1,63 @@
-# JUnumLIB
+# UnumLIB
 ###### Because unsigneds in Java SUCK
 
-_____________________________________
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)  
+[![Java Version](https://img.shields.io/badge/java-8%2B-brightgreen.svg)](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
 
-### so what is this?
+---
 
-Amidst my struggles with emudev in Java, I realised that this language that I deeply ***"love"*** is absolutely torturous
-when it comes to handling unsigned numbers. Thus, I decided to bring it into my own grubby hands to solve the issue, because
-realistically how does a language with such recognition and that, and I quote Mr. Oracle himself "Runs in 3 billion devices"
-not have native support for unsigned numbers?
--------------------------------------
-### what does it do?
+### What is this?
 
-Well If I haven't been clear enough, it solves one of the most infuriating issues(at least for me) in Java,
-which is the lack of unsigned numbers. It does this by providing a set of classes that mimic the behaviour of
-unsigned integers, With options for either strict limits or with overflow behaviour. also providing a set of utilities
-to make the usage and conversion to and from native types easier.
--------------------------------------
-### how do I use it?
-Well, for now it's not yet published or finished, I plan on publish it to Maven Central once it's done, but for now
-you can clone the repo and build it yourself. Once you have the jar, you can add it to your project and start using it.
-For help with usage, you can check the javadocs or the wiki, which I will be updating with examples and guides.
--------------------------------------
+Amidst my struggles with emulation development in Java, I realized that this language I deeply ***"love"***  
+is absolutely torturous when it comes to handling **unsigned numbers**.
+
+So I decided to take matters into my own hands. Because, realistically: how does a language that,  
+and I quote Mr. Oracle himself, *"Runs on 3 billion devices"*, not have **native support for unsigned integers**?
+
+---
+
+### What does it do?
+
+UnumLIB provides a set of classes that mimic the behavior of unsigned integers in Java.
+
+Features include:
+- **Strict limits or overflow behavior**
+- **Utilities** to easily convert to/from native Java types
+- Fully compatible with Java’s `Number` hierarchy
+
+In short: it fixes one of the most infuriating pain points in Java.
+
+---
+
+### How do I use it?
+
+Currently, UnumLIB isn’t published to Maven Central yet. For now:
+
+1. Clone the repo:
+    ```bash 
+    git clone https://github.com/Olhalvo/JUnumLib.git
+   ```
+2. Build the JAR locally:
+    ```bash 
+    ./gradlew build
+    ```
+3. Add the JAR to your project and start using the classes.
+
+For usage examples and guides, check the **Javadocs** or the **Wiki**, which will be updated regularly during development
+(or at least when I remember to update them :3)
+
+---
+
+### License
+
+This project is released under the **Unlicense**.  
+You can do whatever you want with it — no restrictions, no attribution required.  
+See [UNLICENSE](UNLICENSE) for full details.
+
+---
+
 ### Contact me
-If you have any questions, suggestions or issues, feel free to open an issue on the GitHub repo or contact me via 
-[Email](mailto:bernardomeloesteves@hotmail.com)
+
+If you have any questions, suggestions, or issues, feel free to open an issue on the GitHub repo or contact me via  
+[Email](mailto:bernardomeloesteves@hotmail.com)  
 or [Discord](https://discord.com/users/515576405904457728)

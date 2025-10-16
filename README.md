@@ -43,7 +43,7 @@ Currently, UnumLIB isn’t published to Maven Central yet. For now:
     ```
 3. Add the JAR to your project and start using the classes.
 
-For usage examples and guides, check the **Javadocs** or the **Wiki**, which will be updated regularly during development
+For usage examples and guides, check the [**Javadocs**](https://olhalvo.github.io/JUnumLib/) or the **Wiki**, which will be updated regularly during development
 (or at least when I remember to update them :3)
 
 ---

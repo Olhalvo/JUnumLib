@@ -5,7 +5,7 @@
 <title>OutOfUnsignedRangeException (JUnumLib 0.1-PREVIEW API)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="declaration: package: me.olhalvo.unum.types, class: OutOfUnsignedRangeException">
+<meta name="description" content="declaration: package: me.olhalvo.unum.exception, class: OutOfUnsignedRangeException">
 <meta name="generator" content="javadoc/ClassWriter">
 <link rel="stylesheet" type="text/css" href="../../../../resource-files/jquery-ui.min.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../resource-files/stylesheet.css" title="Style">
@@ -79,7 +79,7 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">me.olhalvo.unum.types</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">me.olhalvo.unum.exception</a></div>
 <h1 title="Class OutOfUnsignedRangeException" class="title">Class OutOfUnsignedRangeException</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -88,7 +88,7 @@ loadScripts(document, 'script');</script>
 <div class="inheritance"><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/RuntimeException.html" title="class or interface in java.lang" class="external-link">java.lang.RuntimeException</a>
 <div class="inheritance"><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">java.lang.IllegalArgumentException</a>
 <div class="inheritance"><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/NumberFormatException.html" title="class or interface in java.lang" class="external-link">java.lang.NumberFormatException</a>
-<div class="inheritance">me.olhalvo.unum.types.OutOfUnsignedRangeException</div>
+<div class="inheritance">me.olhalvo.unum.exception.OutOfUnsignedRangeException</div>
 </div>
 </div>
 </div>
@@ -109,7 +109,7 @@ loadScripts(document, 'script');</script>
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../serialized-form.html#me.olhalvo.unum.types.OutOfUnsignedRangeException">Serialized Form</a></li>
+<li><a href="../../../../serialized-form.html#me.olhalvo.unum.exception.OutOfUnsignedRangeException">Serialized Form</a></li>
 </ul>
 </dd>
 </dl>
@@ -125,11 +125,13 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Class,long,long,long)" class="member-name-link">OutOfUnsignedRangeException</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;type,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Class,long,long,long)" class="member-name-link">OutOfUnsignedRangeException</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="../types/UNumber.html" title="class in me.olhalvo.unum.types">UNumber</a>&gt;&nbsp;type,
  long&nbsp;value,
  long&nbsp;min,
  long&nbsp;max)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs a new OutOfUnsignedRangeException with the specified detail message.</div>
+</div>
 </div>
 </section>
 </li>
@@ -158,10 +160,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(java.lang.Class,long,long,long)">
 <h3>OutOfUnsignedRangeException</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">OutOfUnsignedRangeException</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;type,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">OutOfUnsignedRangeException</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="../types/UNumber.html" title="class in me.olhalvo.unum.types">UNumber</a>&gt;&nbsp;type,
  long&nbsp;value,
  long&nbsp;min,
  long&nbsp;max)</span></div>
+<div class="block">Constructs a new OutOfUnsignedRangeException with the specified detail message.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>type</code> - the type that the value is out of range for</dd>
+<dd><code>value</code> - the value that is out of range</dd>
+<dd><code>min</code> - the minimum value for the type</dd>
+<dd><code>max</code> - the maximum value for the type</dd>
+</dl>
 </div>
 </section>
 </li>

@@ -1,21 +1,25 @@
 package me.olhalvo.unum.types;
 
+import me.olhalvo.unum.types.overflow.UByteO;
+import me.olhalvo.unum.exception.OutOfUnsignedRangeException;
 /**
  * Class used to represent an unsigned byte (0 to 255)
  *
  * @author Olhalvo
  */
-public final class UByte extends UNumber implements Comparable<UByte> {
+public class UByte extends UNumber implements Comparable<Number> {
 
     private static final long serialVersionUID = 1510047123516292284L;
     /**
      * The minimum value an UByte can have (0)
+     * @see #MAX_VALUE
      */
-    private static final short MIN_VALUE = 0;
+    public static final short MIN_VALUE = 0;
     /**
      * The maximum value an UByte can have (255)
+     * @see #MIN_VALUE
      */
-    private static final short MAX_VALUE = 0xFF;
+    public static final short MAX_VALUE = 0xFF;
     /**
      * The value of this UByte stored as a short
      * to avoid sign issues
@@ -28,57 +32,92 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @return a UByte instance representing the specified value
      * @throws OutOfUnsignedRangeException if the value is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see UByte#MIN_VALUE
+     * @see UByte#MAX_VALUE
+     * @see #valueOf(byte)
+     * @see #valueOf(int)
+     * @see #valueOf(long)
+     * @see #valueOf(String)
      */
     public static UByte valueOf(short value) throws OutOfUnsignedRangeException {
         return new UByte(value);
     }
 
     /**
-     * see {@link UByte#valueOf(short)}
+     * see: {@link UByte#valueOf(short)}
      */
     public static UByte valueOf(byte value) {
         return new UByte(value);
     }
     /**
-     * see {@link UByte#valueOf(short)}
+     * see: {@link UByte#valueOf(short)}
      */
     public static UByte valueOf(long value) throws OutOfUnsignedRangeException {
         return new UByte(value);
     }
     /**
-     * see {@link UByte#valueOf(short)}
+     * see: {@link UByte#valueOf(short)}
      */
     public static UByte valueOf(int value) throws OutOfUnsignedRangeException {
         return new UByte(value);
     }
     /**
-     * see {@link UByte#valueOf(short)}
+     * see: {@link UByte#valueOf(short)}
      */
     public static UByte valueOf(String value) throws OutOfUnsignedRangeException {
         return new UByte(Short.parseShort(value));
     }
 
-    //Private constructors to force the use of valueOf methods (they are prettier :3)
-    private UByte(short value) throws OutOfUnsignedRangeException{
-        this.value = value;
-        if(!isValid(value))
-            throw new OutOfUnsignedRangeException(UByte.class, value, MIN_VALUE, MAX_VALUE);
+    /**
+     * Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes
+     * @see #valueOf(byte)
+     */
+    protected UByte newInstance(byte value) throws OutOfUnsignedRangeException {
+        return UByte.valueOf(value);
+    }
+    /**
+     * Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes
+     * @see #valueOf(short)
+     */
+    protected UByte newInstance(short value) throws OutOfUnsignedRangeException {
+        return UByte.valueOf(value);
+    }
+    /**
+     * Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes
+     * @see #valueOf(int)
+     */
+    protected UByte newInstance(int value) throws OutOfUnsignedRangeException {
+        return UByte.valueOf(value);
+    }
+    /**
+     * Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes
+     * @see #valueOf(long)
+     */
+    protected UByte newInstance(long value) throws OutOfUnsignedRangeException {
+        return UByte.valueOf(value);
     }
 
-    private UByte(byte value) {
+    //Protected constructors to force the use of valueOf methods (they are prettier :3)
+    protected UByte(short value) throws OutOfUnsignedRangeException{
+        this.value = value;
+        if(!isValid(value))
+            throw new OutOfUnsignedRangeException(this.getClass(), value, MIN_VALUE, MAX_VALUE);
+    }
+
+    protected UByte(byte value) {
         this.value = (short)(value & MAX_VALUE);
     }
 
-    private UByte(long value) throws OutOfUnsignedRangeException {
+    protected UByte(long value) throws OutOfUnsignedRangeException {
         this.value = (short) value;
         if(!isValid(value))
-            throw new OutOfUnsignedRangeException(UByte.class, value, MIN_VALUE, MAX_VALUE);
+            throw new OutOfUnsignedRangeException(this.getClass(), value, MIN_VALUE, MAX_VALUE);
     }
 
-    private UByte(int value) throws OutOfUnsignedRangeException {
+    protected UByte(int value) throws OutOfUnsignedRangeException {
         this.value = (short) value;
         if(!isValid(value))
-            throw new OutOfUnsignedRangeException(UByte.class, value, MIN_VALUE, MAX_VALUE);
+            throw new OutOfUnsignedRangeException(this.getClass(), value, MIN_VALUE, MAX_VALUE);
     }
 
     //private method to check if a value is in range
@@ -125,10 +164,6 @@ public final class UByte extends UNumber implements Comparable<UByte> {
     /**
      * see {@link Byte#compareTo(Byte)}
      */
-    @Override
-    public int compareTo(UByte o) {
-        return this.value - o.value;
-    }
 
     @Override
     public String toString() {
@@ -165,9 +200,13 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #subtract(Number)
+     * @see #multiply(Number)
+     * @see #divide(Number)
+     * @see #remainder(Number)
      */
     public <T extends Number> UByte add(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value + b.longValue());
+        return newInstance(this.value + b.longValue());
     }
 
     /**
@@ -177,9 +216,13 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #add(Number)
+     * @see #multiply(Number)
+     * @see #divide(Number)
+     * @see #remainder(Number)
      */
     public <T extends Number> UByte subtract(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value - b.longValue());
+        return newInstance(this.value - b.longValue());
     }
 
     /**
@@ -189,9 +232,13 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #subtract(Number)
+     * @see #add(Number)
+     * @see #divide(Number)
+     * @see #remainder(Number)
      */
     public <T extends Number> UByte multiply(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value * b.longValue());
+        return newInstance(this.value * b.longValue());
     }
 
     /**
@@ -201,9 +248,13 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #subtract(Number)
+     * @see #multiply(Number)
+     * @see #add(Number)
+     * @see #remainder(Number)
      */
     public <T extends Number> UByte divide(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value / b.longValue());
+        return newInstance(this.value / b.longValue());
     }
 
     /**
@@ -213,9 +264,13 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #subtract(Number)
+     * @see #multiply(Number)
+     * @see #divide(Number)
+     * @see #add(Number)
      */
     public <T extends Number> UByte remainder(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value % b.longValue());
+        return newInstance(this.value % b.longValue());
     }
 
     /**
@@ -224,10 +279,15 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @return a new UByte with the result
      * @param <T> the type of the number
      * @author Olhalvo
+     * @see #or(Number)
+     * @see #xor(Number)
+     * @see #not()
+     * @see #lsl(int)
+     * @see #lsr(int)
      */
     public <T extends Number> UByte and(T b){
         //never throws exception because the result is always in range
-        return UByte.valueOf(this.value & b.longValue());
+        return newInstance(this.value & b.longValue());
     }
 
     /**
@@ -237,9 +297,14 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #and(Number)
+     * @see #xor(Number)
+     * @see #not()
+     * @see #lsl(int)
+     * @see #lsr(int)
      */
     public <T extends Number> UByte or(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value | b.longValue());
+        return newInstance(this.value | b.longValue());
     }
 
     /**
@@ -249,37 +314,59 @@ public final class UByte extends UNumber implements Comparable<UByte> {
      * @param <T> the type of the number
      * @throws OutOfUnsignedRangeException if the result is out of range({@link UByte#MIN_VALUE} to {@link UByte#MAX_VALUE})
      * @author Olhalvo
+     * @see #or(Number)
+     * @see #and(Number)
+     * @see #not()
+     * @see #lsl(int)
+     * @see #lsr(int)
      */
     public <T extends Number> UByte xor(T b) throws OutOfUnsignedRangeException {
-        return UByte.valueOf(this.value ^ b.longValue());
+        return newInstance(this.value ^ b.longValue());
     }
     /**
      * Performs a bitwise NOT operation on this UByte
      * @return a new UByte with the result
+     * @see #or(Number)
+     * @see #xor(Number)
+     * @see #and(Number)
+     * @see #lsl(int)
+     * @see #lsr(int)
      */
     public UByte not(){
         //never throws exception because the result is always in range
-        return UByte.valueOf(~this.value & MAX_VALUE);
+        return newInstance(~this.value & MAX_VALUE);
     }
 
     /**
      * Performs a logical left shift operation on this UByte
      * @param n the number of bits to shift
      * @return a new UByte with the result
+     * @see #or(Number)
+     * @see #xor(Number)
+     * @see #not()
+     * @see #and(Number)
+     * @see #lsr(int)
      */
     public UByte lsl(int n){
         //never throws exception because the result is always in range
-        return UByte.valueOf((this.value << n) & MAX_VALUE);
+        return newInstance((this.value << n) & MAX_VALUE);
     }
 
     /**
      * Performs a logical right shift operation on this UByte
      * @param n the number of bits to shift
      * @return a new UByte with the result
+     * @see #or(Number)
+     * @see #xor(Number)
+     * @see #not()
+     * @see #lsl(int)
+     * @see #and(Number)
      */
     public UByte lsr(int n){
         //never throws exception because the result is always in range
-        return UByte.valueOf((this.value & MAX_VALUE) >>> n);
+        return newInstance((this.value & MAX_VALUE) >>> n);
     }
-
+    public UByteO asOverflow(){
+        return UByteO.valueOf(this.value);
+    }
 }

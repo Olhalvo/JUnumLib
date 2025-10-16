@@ -37,16 +37,16 @@ loadScripts(document, 'script');</script>
 <p>Summary:</p>
 <ul>
 <li>Nested</li>
-<li>Field</li>
-<li>Constr</li>
+<li><a href="#field-summary">Field</a></li>
+<li><a href="#constructor-summary">Constr</a></li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 </li>
 <li>
 <p>Detail:</p>
 <ul>
-<li>Field</li>
-<li>Constr</li>
+<li><a href="#field-detail">Field</a></li>
+<li><a href="#constructor-detail">Constr</a></li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </li>
@@ -57,14 +57,14 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
@@ -93,12 +93,16 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</code></dd>
+</dl>
+<dl class="notes">
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="overflow/UByteO.html" title="class in me.olhalvo.unum.types.overflow">UByteO</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">UByte</span>
+<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">UByte</span>
 <span class="extends-implements">extends <a href="UNumber.html" title="class in me.olhalvo.unum.types">UNumber</a>
-implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a>&gt;</span></div>
+implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span></div>
 <div class="block">Class used to represent an unsigned byte (0 to 255)</div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -112,6 +116,52 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- =========== FIELD SUMMARY =========== -->
+<li>
+<section class="field-summary" id="field-summary">
+<h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static final short</code></div>
+<div class="col-second even-row-color"><code><a href="#MAX_VALUE" class="member-name-link">MAX_VALUE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The maximum value an UByte can have (255)</div>
+</div>
+<div class="col-first odd-row-color"><code>static final short</code></div>
+<div class="col-second odd-row-color"><code><a href="#MIN_VALUE" class="member-name-link">MIN_VALUE</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The minimum value an UByte can have (0)</div>
+</div>
+</div>
+</section>
+</li>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<li>
+<section class="constructor-summary" id="constructor-summary">
+<h2>Constructor Summary</h2>
+<div class="caption"><span>Constructors</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier</div>
+<div class="table-header col-second">Constructor</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>protected </code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(byte)" class="member-name-link">UByte</a><wbr>(byte&nbsp;value)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected </code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(int)" class="member-name-link">UByte</a><wbr>(int&nbsp;value)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected </code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(long)" class="member-name-link">UByte</a><wbr>(long&nbsp;value)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected </code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(short)" class="member-name-link">UByte</a><wbr>(short&nbsp;value)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
@@ -133,11 +183,9 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Performs a bitwise AND operation between this UByte and the given number, returning a new UByte with the result</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#compareTo(me.olhalvo.unum.types.UByte)" class="member-name-link">compareTo</a><wbr>(<a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a>&nbsp;o)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">see <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)" title="class or interface in java.lang" class="external-link"><code>Byte.compareTo(Byte)</code></a></div>
-</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="overflow/UByteO.html" title="class in me.olhalvo.unum.types.overflow">UByteO</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#asOverflow()" class="member-name-link">asOverflow</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;<br><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#divide(T)" class="member-name-link">divide</a><wbr>(T&nbsp;b)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -186,6 +234,26 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Multiplies this Ubyte by the passed number and returns a new UByte with the result</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newInstance(byte)" class="member-name-link">newInstance</a><wbr>(byte&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newInstance(int)" class="member-name-link">newInstance</a><wbr>(int&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newInstance(long)" class="member-name-link">newInstance</a><wbr>(long&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newInstance(short)" class="member-name-link">newInstance</a><wbr>(short&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#not()" class="member-name-link">not</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -208,21 +276,23 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">see <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)" title="class or interface in java.lang" class="external-link"><code>Byte.compareTo(Byte)</code></a></div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(byte)" class="member-name-link">valueOf</a><wbr>(byte&nbsp;value)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(int)" class="member-name-link">valueOf</a><wbr>(int&nbsp;value)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(long)" class="member-name-link">valueOf</a><wbr>(long&nbsp;value)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(short)" class="member-name-link">valueOf</a><wbr>(short&nbsp;value)</code></div>
@@ -232,7 +302,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(java.lang.String)" class="member-name-link">valueOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;<br><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#xor(T)" class="member-name-link">xor</a><wbr>(T&nbsp;b)</code></div>
@@ -243,17 +313,122 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 </div>
 </div>
 <div class="inherited-list">
+<h3 id="methods-inherited-from-class-me.olhalvo.unum.types.UNumber">Methods inherited from class&nbsp;me.olhalvo.unum.types.<a href="UNumber.html" title="class in me.olhalvo.unum.types">UNumber</a></h3>
+<code><a href="UNumber.html#compareTo(java.lang.Number)">compareTo</a></code></div>
+<div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Number">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html#byteValue()" title="class or interface in java.lang" class="external-link">byteValue</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html#shortValue()" title="class or interface in java.lang" class="external-link">shortValue</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-java.lang.Comparable">Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code></div>
 </section>
 </li>
 </ul>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="MIN_VALUE">
+<h3>MIN_VALUE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">short</span>&nbsp;<span class="element-name">MIN_VALUE</span></div>
+<div class="block">The minimum value an UByte can have (0)</div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#MAX_VALUE"><code>MAX_VALUE</code></a></li>
+<li><a href="../../../../constant-values.html#me.olhalvo.unum.types.UByte.MIN_VALUE">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="MAX_VALUE">
+<h3>MAX_VALUE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">short</span>&nbsp;<span class="element-name">MAX_VALUE</span></div>
+<div class="block">The maximum value an UByte can have (255)</div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#MIN_VALUE"><code>MIN_VALUE</code></a></li>
+<li><a href="../../../../constant-values.html#me.olhalvo.unum.types.UByte.MAX_VALUE">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<li>
+<section class="constructor-details" id="constructor-detail">
+<h2>Constructor Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="&lt;init&gt;(short)">
+<h3>UByte</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">UByte</span><wbr><span class="parameters">(short&nbsp;value)</span>
+         throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(byte)">
+<h3>UByte</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">UByte</span><wbr><span class="parameters">(byte&nbsp;value)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(long)">
+<h3>UByte</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">UByte</span><wbr><span class="parameters">(long&nbsp;value)</span>
+         throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(int)">
+<h3>UByte</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">UByte</span><wbr><span class="parameters">(int&nbsp;value)</span>
+         throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method-detail">
@@ -264,7 +439,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3>valueOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">valueOf</span><wbr><span class="parameters">(short&nbsp;value)</span>
-                     throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Returns a UByte instance representing the specified value</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -272,7 +447,18 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a UByte instance representing the specified value</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the value is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the value is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#MIN_VALUE"><code>MIN_VALUE</code></a></li>
+<li><a href="#MAX_VALUE"><code>MAX_VALUE</code></a></li>
+<li><a href="#valueOf(byte)"><code>valueOf(byte)</code></a></li>
+<li><a href="#valueOf(int)"><code>valueOf(int)</code></a></li>
+<li><a href="#valueOf(long)"><code>valueOf(long)</code></a></li>
+<li><a href="#valueOf(java.lang.String)"><code>valueOf(String)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -282,7 +468,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3>valueOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">valueOf</span><wbr><span class="parameters">(byte&nbsp;value)</span></div>
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 </div>
 </section>
 </li>
@@ -291,11 +477,11 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3>valueOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">valueOf</span><wbr><span class="parameters">(long&nbsp;value)</span>
-                     throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 <dl class="notes">
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code></dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
 </dl>
 </div>
 </section>
@@ -305,11 +491,11 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3>valueOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">valueOf</span><wbr><span class="parameters">(int&nbsp;value)</span>
-                     throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 <dl class="notes">
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code></dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
 </dl>
 </div>
 </section>
@@ -319,11 +505,91 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3>valueOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">valueOf</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span>
-                     throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
-<div class="block">see <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">see: <a href="#valueOf(short)"><code>valueOf(short)</code></a></div>
 <dl class="notes">
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code></dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="newInstance(byte)">
+<h3>newInstance</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">newInstance</span><wbr><span class="parameters">(byte&nbsp;value)</span>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#valueOf(byte)"><code>valueOf(byte)</code></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="newInstance(short)">
+<h3>newInstance</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">newInstance</span><wbr><span class="parameters">(short&nbsp;value)</span>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#valueOf(short)"><code>valueOf(short)</code></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="newInstance(int)">
+<h3>newInstance</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">newInstance</span><wbr><span class="parameters">(int&nbsp;value)</span>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#valueOf(int)"><code>valueOf(int)</code></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="newInstance(long)">
+<h3>newInstance</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">newInstance</span><wbr><span class="parameters">(long&nbsp;value)</span>
+                     throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
+<div class="block">Protected methods to be used so that arithmetic methods can have similar behaviour in overflow classes</div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code></dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#valueOf(long)"><code>valueOf(long)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -381,23 +647,11 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 </section>
 </li>
 <li>
-<section class="detail" id="compareTo(me.olhalvo.unum.types.UByte)">
-<h3>compareTo</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">compareTo</span><wbr><span class="parameters">(<a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a>&nbsp;o)</span></div>
-<div class="block">see <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)" title="class or interface in java.lang" class="external-link"><code>Byte.compareTo(Byte)</code></a></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a>&gt;</code></dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="toString()">
 <h3>toString</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">toString</span>()</div>
+<div class="block">see <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)" title="class or interface in java.lang" class="external-link"><code>Byte.compareTo(Byte)</code></a></div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></dd>
@@ -440,7 +694,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="add(java.lang.Number)">add</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">add</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                             throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                             throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Adds the given number to this UByte and returns a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -450,7 +704,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#subtract(T)"><code>subtract(Number)</code></a></li>
+<li><a href="#multiply(T)"><code>multiply(Number)</code></a></li>
+<li><a href="#divide(T)"><code>divide(Number)</code></a></li>
+<li><a href="#remainder(T)"><code>remainder(Number)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -460,7 +723,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="subtract(java.lang.Number)">subtract</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">subtract</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                                  throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                                  throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Subtracts the given number to this UByte and returns a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -470,7 +733,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#add(T)"><code>add(Number)</code></a></li>
+<li><a href="#multiply(T)"><code>multiply(Number)</code></a></li>
+<li><a href="#divide(T)"><code>divide(Number)</code></a></li>
+<li><a href="#remainder(T)"><code>remainder(Number)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -480,7 +752,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="multiply(java.lang.Number)">multiply</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">multiply</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                                  throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                                  throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Multiplies this Ubyte by the passed number and returns a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -490,7 +762,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#subtract(T)"><code>subtract(Number)</code></a></li>
+<li><a href="#add(T)"><code>add(Number)</code></a></li>
+<li><a href="#divide(T)"><code>divide(Number)</code></a></li>
+<li><a href="#remainder(T)"><code>remainder(Number)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -500,7 +781,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="divide(java.lang.Number)">divide</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">divide</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                                throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                                throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Divides this Ubyte by the passed number and returns a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -510,7 +791,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#subtract(T)"><code>subtract(Number)</code></a></li>
+<li><a href="#multiply(T)"><code>multiply(Number)</code></a></li>
+<li><a href="#add(T)"><code>add(Number)</code></a></li>
+<li><a href="#remainder(T)"><code>remainder(Number)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -520,7 +810,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="remainder(java.lang.Number)">remainder</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">remainder</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                                   throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                                   throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Calculates the remainder of this Ubyte divided by the passed number and returns a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -530,7 +820,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#subtract(T)"><code>subtract(Number)</code></a></li>
+<li><a href="#multiply(T)"><code>multiply(Number)</code></a></li>
+<li><a href="#divide(T)"><code>divide(Number)</code></a></li>
+<li><a href="#add(T)"><code>add(Number)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -548,6 +847,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dd><code>b</code> - the number to AND with</dd>
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#or(T)"><code>or(Number)</code></a></li>
+<li><a href="#xor(T)"><code>xor(Number)</code></a></li>
+<li><a href="#not()"><code>not()</code></a></li>
+<li><a href="#lsl(int)"><code>lsl(int)</code></a></li>
+<li><a href="#lsr(int)"><code>lsr(int)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -557,7 +866,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="or(java.lang.Number)">or</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">or</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                            throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                            throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Performs a bitwise OR operation between this UByte and the given number, returning a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -567,7 +876,17 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#and(T)"><code>and(Number)</code></a></li>
+<li><a href="#xor(T)"><code>xor(Number)</code></a></li>
+<li><a href="#not()"><code>not()</code></a></li>
+<li><a href="#lsl(int)"><code>lsl(int)</code></a></li>
+<li><a href="#lsr(int)"><code>lsr(int)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -577,7 +896,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <h3 id="xor(java.lang.Number)">xor</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="return-type"><a href="UByte.html" title="class in me.olhalvo.unum.types">UByte</a></span>&nbsp;<span class="element-name">xor</span><wbr><span class="parameters">(T&nbsp;b)</span>
-                             throws <span class="exceptions"><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></span></div>
+                             throws <span class="exceptions"><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></span></div>
 <div class="block">Performs a bitwise XOR operation between this UByte and the given number, returning a new UByte with the result</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
@@ -587,7 +906,17 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
 <dt>Throws:</dt>
-<dd><code><a href="OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.types">OutOfUnsignedRangeException</a></code> - if the result is out of range(<code>MIN_VALUE</code> to <code>MAX_VALUE</code>)</dd>
+<dd><code><a href="../exception/OutOfUnsignedRangeException.html" title="class in me.olhalvo.unum.exception">OutOfUnsignedRangeException</a></code> - if the result is out of range(<a href="#MIN_VALUE"><code>MIN_VALUE</code></a> to <a href="#MAX_VALUE"><code>MAX_VALUE</code></a>)</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#or(T)"><code>or(Number)</code></a></li>
+<li><a href="#and(T)"><code>and(Number)</code></a></li>
+<li><a href="#not()"><code>not()</code></a></li>
+<li><a href="#lsl(int)"><code>lsl(int)</code></a></li>
+<li><a href="#lsr(int)"><code>lsr(int)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -601,6 +930,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#or(T)"><code>or(Number)</code></a></li>
+<li><a href="#xor(T)"><code>xor(Number)</code></a></li>
+<li><a href="#and(T)"><code>and(Number)</code></a></li>
+<li><a href="#lsl(int)"><code>lsl(int)</code></a></li>
+<li><a href="#lsr(int)"><code>lsr(int)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -616,6 +955,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dd><code>n</code> - the number of bits to shift</dd>
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#or(T)"><code>or(Number)</code></a></li>
+<li><a href="#xor(T)"><code>xor(Number)</code></a></li>
+<li><a href="#not()"><code>not()</code></a></li>
+<li><a href="#and(T)"><code>and(Number)</code></a></li>
+<li><a href="#lsr(int)"><code>lsr(int)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -631,7 +980,25 @@ implements <a href="https://docs.oracle.com/en/java/javase/22/docs/api/java.base
 <dd><code>n</code> - the number of bits to shift</dd>
 <dt>Returns:</dt>
 <dd>a new UByte with the result</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#or(T)"><code>or(Number)</code></a></li>
+<li><a href="#xor(T)"><code>xor(Number)</code></a></li>
+<li><a href="#not()"><code>not()</code></a></li>
+<li><a href="#lsl(int)"><code>lsl(int)</code></a></li>
+<li><a href="#and(T)"><code>and(Number)</code></a></li>
+</ul>
+</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="asOverflow()">
+<h3>asOverflow</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="overflow/UByteO.html" title="class in me.olhalvo.unum.types.overflow">UByteO</a></span>&nbsp;<span class="element-name">asOverflow</span>()</div>
 </div>
 </section>
 </li>
